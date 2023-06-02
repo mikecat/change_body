@@ -1,0 +1,74 @@
+body {
+	text-align: center;
+}
+
+#main-area {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	grid-template-rows: 1fr auto;
+}
+
+#main-area-image {
+	grid-row: 1;
+	grid-column: 2;
+}
+
+.simple-image {
+	max-width: 90vw;
+	max-height: calc(100vh - 20em);
+}
+
+#main-area-control {
+	grid-row: 2;
+	grid-column: 2;
+	margin-top: 0.5em;
+}
+
+.control-field, .params-field {
+	width: 100%;
+	box-sizing: border-box;
+	display: grid;
+	margin-top: 0.5em;
+}
+
+.control-field {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.params-field {
+	grid-template-columns: auto 1fr auto;
+}
+
+.control-field button {
+	margin: 0 0.4em;
+	padding: 0.3em 0;
+}
+
+.control-toggle-left, .params-direction {
+	grid-column: 1;
+}
+
+.control-toggle-both, .params-speed-bar {
+	grid-column: 2;
+}
+
+.control-toggle-right, .params-speed-input {
+	grid-column: 3;
+}
+
+.params-direction {
+	margin-right: 0.3em;
+}
+
+.params-speed-bar {
+	width: 100%;
+}
+
+.params-speed-input {
+	margin-left: 0.3em;
+	white-space: nowrap;
+}
+
+.return-button {
+	padding: 0.3em 3em;
+}
